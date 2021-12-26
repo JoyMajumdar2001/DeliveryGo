@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PartnerActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="12dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/firstLetterText"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_bg"
+            android:text="@string/a"
+            app:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/userNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tracking_id"
+            app:startIconDrawable="@drawable/ic_fast_delivery"
+            android:layout_marginBottom="6dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/trackIdText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:textSize="18sp"
+            app:cornerRadius="12dp"
+            android:padding="8dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/shade_line_bg"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="4dp"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/createButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_baseline_add_24"
+            android:text="@string/register_a_order"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

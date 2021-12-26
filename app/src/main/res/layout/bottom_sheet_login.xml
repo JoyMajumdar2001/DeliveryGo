@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_for_delivery_partner"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="4dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/unique_id"
+        app:startIconDrawable="@drawable/ic_id_card"
+        android:layout_marginBottom="6dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/unique_id_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="18sp"
+        app:cornerRadius="12dp"
+        android:padding="8dp"/>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/indicatorCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:indicatorColor="@color/purple_500"
+        android:indeterminate="true"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">DeliveryGo</string>
+    <string name="tracking_id">Tracking ID</string>
+    <string name="track">Track</string>
+    <string name="or">Or</string>
+    <string name="login_as_delivery_partner">Login as Delivery Partner</string>
+    <string name="login">Login</string>
+    <string name="unique_id">Unique ID</string>
+    <string name="login_for_delivery_partner">Login for Delivery Partner</string>
+    <string name="apiKey">rBIARhef9NdGmP9rSccGfga3qHiHX5Ml3vSNod9VUPEhHNyusJPOkIdTOFaLFkvz</string>
+    <string name="a">A</string>
+    <string name="user_name">User Name</string>
+    <string name="update">Update</string>
+    <string name="register_a_order">Register an order</string>
+    <string name="applicant_name">Applicant Name</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="destination">Destination</string>
+    <string name="recipient_mob">Recipient Mob</string>
+    <string name="recipient_email">Recipient Email</string>
+    <string name="partner_name">Partner Name</string>
+    <string name="shipment_date">Shipment Date</string>
+    <string name="shipment_time">Shipment Time</string>
+    <string name="parcel_weight">Parcel Weight</string>
+    <string name="register">Register</string>
+    <string name="parcel_price">Parcel Price</string>
+    <string name="recipient_name">Recipient Name</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="add_an_update">Add an update</string>
+    <string name="hub_location">Hub Location</string>
+    <string name="submit">Submit</string>
+    <string name="shipment_created">Shipment created</string>
+    <string name="arrived">Arrived</string>
+    <string name="left">Left</string>
+    <string name="out_for_delivery">Out for delivery</string>
+    <string name="delivered">Delivered</string>
+</resources>

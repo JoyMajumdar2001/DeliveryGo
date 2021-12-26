@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:overScrollMode="never"
+    tools:context=".CreateActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_a_order"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tracking_id"
+            app:startIconDrawable="@drawable/ic_fast_delivery"
+            android:layout_marginBottom="6dp"
+            android:enabled="false"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/trackIdNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/applicant_name"
+            android:layout_marginBottom="6dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/applicantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pickup_location"
+            android:layout_marginBottom="6dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pickupLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/recipient_name"
+            android:layout_marginBottom="6dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/recipientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/recipient_mob"
+            android:layout_marginBottom="6dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/recipientMob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/recipient_email"
+            android:layout_marginBottom="6dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/recipientEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/destination"
+            android:layout_marginBottom="6dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/destLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/partner_name"
+            android:layout_marginBottom="6dp"
+            app:startIconDrawable="@drawable/ic_baseline_support_agent_24"
+            android:enabled="false"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/partnerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/shipmentDateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shipment_date"
+            android:layout_marginBottom="6dp"
+            app:endIconDrawable="@drawable/ic_baseline_calendar_today_24"
+            app:endIconTint="@color/purple_500"
+            app:endIconContentDescription="@string/app_name"
+            app:endIconMode="custom"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/shipmentDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/shipmentTimeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shipment_time"
+            android:layout_marginBottom="6dp"
+            app:endIconDrawable="@drawable/ic_baseline_access_time_24"
+            app:endIconTint="@color/purple_500"
+            app:endIconMode="custom"
+            app:endIconContentDescription="@string/app_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/shipmentTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/parcel_weight"
+            android:layout_marginBottom="6dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/parcelWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/parcel_price"
+            android:layout_marginBottom="6dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/parcelPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            app:cornerRadius="4dp"/>
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/indicatorCirclePro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:indicatorColor="@color/purple_500"
+            android:layout_margin="4dp"
+            android:indeterminate="true"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

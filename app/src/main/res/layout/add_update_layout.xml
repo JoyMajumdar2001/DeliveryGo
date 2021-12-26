@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hub_location"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="6dp">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/hubLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shipment_created"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arrived"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/left"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/out_for_delivery"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivered"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:layout_margin="8dp"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

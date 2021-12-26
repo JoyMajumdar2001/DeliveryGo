@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context=".UpdateActivity">
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/trackIdNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tracking_id"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recipient_name"
+        android:textSize="18sp"
+        android:textColor="@color/purple_500"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/deliveryAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delivery_address"
+        android:textSize="16sp"
+        android:textColor="@color/purple_500"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/updateRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/shade_line_bg"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_baseline_add_24"
+        android:text="@string/add_an_update"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.core.widget.NestedScrollView>
